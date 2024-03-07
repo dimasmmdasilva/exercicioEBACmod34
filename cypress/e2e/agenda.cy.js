@@ -18,6 +18,7 @@ describe('Testes para a página agenda de contatos', () => {
         cy.get('input[type="email"]').clear().type('alterandoemail@gmail.com')
         cy.get('input[type="tel"]').clear().type('+551998765432')
         cy.get('.alterar').click()
+        cy.wait(1000)
     })
 
     it ('Remoção de um contato', () => {
